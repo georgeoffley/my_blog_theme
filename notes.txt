@@ -1,0 +1,16 @@
+Notes:
+
+//12/1/2013
+
+
+Everything else with the exception of a few things are done:
+
+-work on displaying the comments, make sure date and times for comments are posted, also make sure that there can be replies to replies and nested comments
+
+-style it
+
+-test, test, test
+
+-do the contact page
+
+-deploy and setup how you want on the server 

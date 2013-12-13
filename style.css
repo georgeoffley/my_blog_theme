@@ -1,0 +1,843 @@
+/*
+Theme Name: My Theme Test2
+Theme URI: http://georgeoffley.com
+Description: My simple theme for WP
+Author: George Offley
+Author URI: http://georgeoffley.com
+Version: 0.2
+*/
+
+/*Universal CSS
+----------------------------------------------------------------------------------------------------*/
+
+* {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+html {
+    height: 100%;
+}
+
+
+
+body {
+    background-color: #ECF0F1;
+    height: 100%;
+}
+
+/*Reset CSS
+----------------------------------------------------------------------------------------------------*/
+
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+
+
+/*
+    Variable Grid System.
+    Learn more ~ http://www.spry-soft.com/grids/
+    Based on 960 Grid System - http://960.gs/
+
+    Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 960px;
+  min-height: 900px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+    display:inline;
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+    position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+    margin-left: 0;
+}
+
+.omega {
+    margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .grid_1 {
+    width:60px;
+}
+
+.container_12 .grid_2 {
+    width:140px;
+}
+
+.container_12 .grid_3 {
+    width:220px;
+}
+
+.container_12 .grid_4 {
+    width:300px;
+}
+
+.container_12 .grid_5 {
+    width:380px;
+}
+
+.container_12 .grid_6 {
+    width:460px;
+}
+
+.container_12 .grid_7 {
+    width:540px;
+}
+
+.container_12 .grid_8 {
+    width:620px;
+}
+
+.container_12 .grid_9 {
+    width:700px;
+}
+
+.container_12 .grid_10 {
+    width:780px;
+}
+
+.container_12 .grid_11 {
+    width:860px;
+}
+
+.container_12 .grid_12 {
+    width:940px;
+}
+
+
+
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .prefix_1 {
+    padding-left:80px;
+}
+
+.container_12 .prefix_2 {
+    padding-left:160px;
+}
+
+.container_12 .prefix_3 {
+    padding-left:240px;
+}
+
+.container_12 .prefix_4 {
+    padding-left:320px;
+}
+
+.container_12 .prefix_5 {
+    padding-left:400px;
+}
+
+.container_12 .prefix_6 {
+    padding-left:480px;
+}
+
+.container_12 .prefix_7 {
+    padding-left:560px;
+}
+
+.container_12 .prefix_8 {
+    padding-left:640px;
+}
+
+.container_12 .prefix_9 {
+    padding-left:720px;
+}
+
+.container_12 .prefix_10 {
+    padding-left:800px;
+}
+
+.container_12 .prefix_11 {
+    padding-left:880px;
+}
+
+
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .suffix_1 {
+    padding-right:80px;
+}
+
+.container_12 .suffix_2 {
+    padding-right:160px;
+}
+
+.container_12 .suffix_3 {
+    padding-right:240px;
+}
+
+.container_12 .suffix_4 {
+    padding-right:320px;
+}
+
+.container_12 .suffix_5 {
+    padding-right:400px;
+}
+
+.container_12 .suffix_6 {
+    padding-right:480px;
+}
+
+.container_12 .suffix_7 {
+    padding-right:560px;
+}
+
+.container_12 .suffix_8 {
+    padding-right:640px;
+}
+
+.container_12 .suffix_9 {
+    padding-right:720px;
+}
+
+.container_12 .suffix_10 {
+    padding-right:800px;
+}
+
+.container_12 .suffix_11 {
+    padding-right:880px;
+}
+
+
+
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .push_1 {
+    left:80px;
+}
+
+.container_12 .push_2 {
+    left:160px;
+}
+
+.container_12 .push_3 {
+    left:240px;
+}
+
+.container_12 .push_4 {
+    left:320px;
+}
+
+.container_12 .push_5 {
+    left:400px;
+}
+
+.container_12 .push_6 {
+    left:480px;
+}
+
+.container_12 .push_7 {
+    left:560px;
+}
+
+.container_12 .push_8 {
+    left:640px;
+}
+
+.container_12 .push_9 {
+    left:720px;
+}
+
+.container_12 .push_10 {
+    left:800px;
+}
+
+.container_12 .push_11 {
+    left:880px;
+}
+
+
+
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .pull_1 {
+    left:-80px;
+}
+
+.container_12 .pull_2 {
+    left:-160px;
+}
+
+.container_12 .pull_3 {
+    left:-240px;
+}
+
+.container_12 .pull_4 {
+    left:-320px;
+}
+
+.container_12 .pull_5 {
+    left:-400px;
+}
+
+.container_12 .pull_6 {
+    left:-480px;
+}
+
+.container_12 .pull_7 {
+    left:-560px;
+}
+
+.container_12 .pull_8 {
+    left:-640px;
+}
+
+.container_12 .pull_9 {
+    left:-720px;
+}
+
+.container_12 .pull_10 {
+    left:-800px;
+}
+
+.container_12 .pull_11 {
+    left:-880px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}
+
+/*
+Added this center class to center container children
+*/
+
+.center {
+    margin: 0 auto;
+}
+
+
+
+/*Global CSS
+----------------------------------------------------------------------------------------------------*/
+
+.title {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.title > a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.title > a:hover {
+    text-decoration: underline;
+}
+
+/*Add responsiveness*/
+
+.container {
+    width: 960px;
+    height: 100%;
+}
+
+.title_hdr {
+    width: 960px;
+    height: 150px;
+    background-color: #2C3E50;
+    /*padding-left: 43px;*/
+}
+
+.title_hdr > .page_title {
+    position: relative;
+    left: 43px; /*Line up where I want it to be*/
+    color: #fff;
+}
+
+.page_title > h1 {
+    position: relative;
+    top: 19px;
+}
+
+/* nav_bar css */
+
+.nav_bar {
+    height: 50px;
+    background-color: #BDC3C7;
+}
+
+.nav_list > li > a {
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    list-style-type: none;
+    display: block;
+    float: left;
+    position: relative;
+    top: 7px;
+    left: 43px;
+    padding-left: 10px;
+    padding-right: 25px;
+    margin-right: 5px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transiiton: all 0.3s ease;
+    
+}
+
+.nav_list > li > a:hover {
+    background-color: #FFF;
+    border-radius: 5px 5px 0 0;
+}
+
+.content {
+    background-color: #FFF;
+    min-height: 900px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.footer {
+    height: 35px;
+    background-color: #2C3E50;
+}
+
+.inner_footer {
+    text-align: center;
+    
+}
+
+.post_title {
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+
+.date {
+    color: #95a5a6;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.post {
+    position: relative;
+    left: 35px;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    /*height: 200px;
+    overflow: hidden;*/
+}
+
+/*.post_selected {
+    height: auto;
+    overflow: auto;
+}*/
+
+.post > p {
+    font-family: 'Lora', serif;
+    line-height: 140%;
+    letter-spacing: .025em;
+    padding-top: 10px;
+}
+
+#side_bar {
+    float: right;
+    top: 5px;
+    right: 5px;
+    background-color: #34495e;
+    padding: 20px;
+    color: #eee;
+}
+
+#side_bar > .me {
+    position: relative;
+    left: 45px; /*Wouldn't center for some odd reason, I blame Canada*/
+}
+
+/*Contact Button*/
+.contact {
+    padding: 10px;
+}
+
+.contact {
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+
+#side_bar > h4 {
+    font-size: 1.5em;
+    text-align: left;
+    padding-bottom: 3px;
+    text-decoration: underline;
+}
+
+#side_bar > ul > li > a {
+    color: #eee;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#side_bar > ul > li > a:hover {
+    color: black;
+    text-shadow: 1px 1px #34495e;
+}
+
+#side_bar > p {
+    text-align: left;
+}
+
+.more-link {
+    color: #2980b9;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.more-link:hover {
+    color: black;
+    text-shadow: 1px 1px #34495e;
+}
+
+.social {
+    overflow: hidden;
+}
+
+.social > li {
+   float: left;
+   padding-right: 10px;
+}
+
+.inner_footer {
+    color: #eee;
+}
+
+.title {
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.inner_page {
+    position: relative;
+    left: -10px;
+}
+
+.inner_page > p {
+    padding-top: 20px;
+    font-family: 'Lora', serif;
+}
+
+.inner_page > p > a {
+    font-family: 'Lora', serif;
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.inner_page > p > a:hover {
+    color: black;
+    text-shadow: 1px 1px #34495e;
+}
+
+.my_picture {
+    float: right;
+    padding: 30px;
+}
+
+.contact_form {
+    border-radius: 0 0 5px 5px;
+}
+
+.contact_form > form > label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    display:block;
+    margin-top:10px;
+    letter-spacing:2px;
+    font-size: 1.2em;
+    color: #eee;
+    padding-bottom: 5px;
+}
+
+.contact_form > form > input {
+    font-family: 'Lora', serif;
+    color: #000;
+    height: 40px;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #BDC3C7;
+}
+
+.contact_form > form > input:focus {
+    font-family: 'Lora', serif;
+    background-color: #eee;
+    outline: 0;
+}
+
+.contact_form > form > textarea {
+    font-family: 'Lora', serif;
+    height: 100px;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #BDC3C7;
+}
+
+.contact_form > form > textarea:focus {
+    font-family: 'Lora', serif;
+    background-color: #eee;
+    outline: 0;
+}
+
+.form_title {
+    background-color: #BDC3C7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+}
+
+.form_title > h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.contact_form {
+    padding: 10px;
+    background-color: #34495e;
+}
+
+.comments-template {
+    display: inline;
+    float: left;
+    background-color: #ecf0f1;
+    position: relative;
+    left: 35px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+}
+
+#reply-title {
+    font-size: 2em;
+}
+
+label {
+    display: block;
+    clear: both;
+    padding-top: 20px;
+    font-size: 1.5em
+}
+
+#email,
+#author {
+    height: 40px;
+}
+
+#respond { 
+ 
+padding:0 5px 0 5px;
+}
+
+#comment {
+    max-width: 500px;
+    vertical-align: left;
+}
+
+/* Highlight active form field */
+
+#respond input[type=text], textarea {
+    font-family: 'Lora', serif;
+    font-size: 1.25em;
+    border-radius: 5px;
+    background-color: #BDC3C7;
+}
+ 
+ 
+#respond input[type=text]:focus, textarea:focus {
+  font-family: 'Lora', serif;
+  background-color: #eee;
+  outline: 0;
+}
+
+#submit {
+    padding: 10px;
+    font-size: 1em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: 0;
+}
+
+.comment_display {
+    float: left;
+    display: block;
+    display: inline-block;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    left: 35px; 
+    border-top: 1px solid #3498db;
+    background-color: #ecf0f1;
+}
+
+.single_comment {
+    margin-bottom: 50px;
+    float: left;
+}
+
+.comment_author {
+    font-size: 1.25em;
+    text-decoration: underline;
+}
+
+.comment_content {
+    margin-top: 10px;
+}
+
+.avatar {
+    display: inline;
+    float: left;
+    margin-right: 20px;
+}
